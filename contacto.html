@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto | Valencia Trópico & Cacao</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="images/logo.png" alt="Logo" class="logo">
+            <span>Valencia Trópico</span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="destinos.html">Lugares Turísticos</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="contacto.html" class="active">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="seccion-contacto">
+        <h1>Reserva tu Experiencia</h1>
+        <form action="#" method="POST" class="reserva-form">
+            <label for="nombre">Nombre completo:</label>
+            <input type="text" id="nombre" name="nombre" required placeholder="Ej. Juan Pérez">
+
+            <label for="correo">Correo electrónico:</label>
+            <input type="email" id="correo" name="correo" required placeholder="correo@email.com">
+
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" id="telefono" name="telefono" required placeholder="0991234567">
+
+            <label for="destino">Destino o actividad:</label>
+            <select id="destino" name="destino" required>
+                <option value="">-- Seleccione --</option>
+                <option value="san-pablo">Balneario San Pablo</option>
+                <option value="cacao">Ruta de Cacao</option>
+                <option value="murocomba">Bosque Murocomba</option>
+            </select>
+
+            <label for="fecha">Fecha de visita:</label>
+            <input type="date" id="fecha" name="fecha" required>
+
+            <label for="personas">Número de personas:</label>
+            <input type="number" id="personas" name="personas" min="1" max="20" required value="1">
+
+            <label for="servicio">Tipo de servicio:</label>
+            <select id="servicio" name="servicio" required>
+                <option value="">-- Seleccione servicio --</option>
+                <option value="medio">Medio Día</option>
+                <option value="completo">Día Completo</option>
+            </select>
+
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="4"></textarea>
+
+            <button type="submit" class="btn-enviar">Enviar Reserva</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Valencia Trópico & Cacao - Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
